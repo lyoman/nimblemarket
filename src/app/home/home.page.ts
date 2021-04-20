@@ -20,15 +20,15 @@ export class HomePage {
   }
 
   guest() {
-    this.router.navigateByUrl('/guardian');
+    this.router.navigateByUrl('/register-individual');
   }
 
   login() {
-    this.router.navigateByUrl('/home');
+    this.router.navigateByUrl('/login');
   }
 
   register() {
-    this.router.navigateByUrl('/register');
+    this.router.navigateByUrl('/register-company');
   }
 
   presentAlert2() {

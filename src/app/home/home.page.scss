@@ -20,7 +20,7 @@ ion-button {
 // }
 ion-content {
     --background: none;
-    background-image: url('../../../assets/imgs/bg.jpg');
+    // background-image: url('../../../assets/imgs/bg.jpg');
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -332,10 +332,10 @@ ion-navbar.no-border {
 
 // style for auth pages
 .auth-page {
-    --background-color: #E7E9E5;
+    --background-color: #f8f8f8;
     &::after {
         // content: "";
-        --background: url("../../../assets/imgs/bg.jpg") no-repeat;
+        // --background: url("../../../assets/imgs/bg.jpg") no-repeat;
         --background-size: cover;
         top: 0;
         left: 0;

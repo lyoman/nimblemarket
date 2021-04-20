@@ -1,11 +1,11 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
     <ion-toolbar color="primary">
         <ion-buttons slot="start">
             <ion-back-button defaultHref=""></ion-back-button>
         </ion-buttons>
         <ion-title class="title" style="margin-right:50px;">Sign In - Individual Account</ion-title>
     </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 
 
@@ -20,18 +20,17 @@
         </div>
 
 
-
         <form class="list-form">
-            <h3 style="text-align: center;color: #2A1770;">
+            <h4 style="text-align: center;color: #2A1770;">
                 <p>Register As</p>
-            </h3>
+            </h4>
             <hr>
             <ion-item>
                 <ion-label position="floating" style="color: #2A1770;">
                     <ion-icon name="person" item-start class="text-warning"></ion-icon>
                     SELLER
                 </ion-label>
-                <ion-input type="checkbox" [(ngModel)]="user.username" name="username"></ion-input>
+                <ion-input (change)="guest()" type="checkbox" [(ngModel)]="user.username" name="username"></ion-input>
             </ion-item>
 
             <ion-item>
@@ -39,7 +38,7 @@
                     <ion-icon name="person" item-start class="text-warning"></ion-icon>
                     BUYER
                 </ion-label>
-                <ion-input type="checkbox" [(ngModel)]="user.username" name="First Name"></ion-input>
+                <ion-input (change)="register()" type="checkbox" [(ngModel)]="user.username" name="First Name"></ion-input>
             </ion-item>
 
             <ion-item>
@@ -55,7 +54,7 @@
         <div margin-top>
             <ion-text>
                 A courier account allows you to find delivery jobs
-            </ion-text>>
+            </ion-text>
         </div><br>
         <!-- <div text-center margin-top>
         <span tappable [routerLink]="['/login']">
