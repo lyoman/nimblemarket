@@ -1,0 +1,134 @@
+<ion-header [translucent]="true">
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref=""></ion-back-button>
+        </ion-buttons>
+        <ion-title class="title" style="margin-right:50px;">Sign In - Individual Account</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content class="ion-padding animated fadeIn login auth-page">
+    <div class="login-content">
+
+        <div padding-horizontal class="ion-text-center" class="animated fadeInDown" style="padding-top: 15%;">
+            <div class="ion-text-center">
+                <img src="../../../assets/imgs/logo.png" style="height: auto;width: 300px;">
+            </div>
+
+            <h3 style="text-align: center;color: #2A1770;">Registration</h3>
+            <h3 style="text-align: center;color: #2A1770;">Individual Account</h3>
+            <h4 style="text-align: center;color: #2A1770;">COURIER SELLER</h4>
+        </div>
+
+
+
+        <form class="list-form">
+            <h3 style="text-align: center;color: #2A1770;">Personal Information</h3>
+            <hr>
+            <ion-item>
+                <ion-label position="floating" style="color: #2A1770;">
+                    <ion-icon name="person" item-start class="text-warning"></ion-icon>
+                    Name
+                </ion-label>
+                <ion-input type="text" [(ngModel)]="user.username" name="First Name"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="floating" style="color: #2A1770;">
+                    <ion-icon name="person" item-start class="text-warning"></ion-icon>
+                    Surname
+                </ion-label>
+                <ion-input type="text" [(ngModel)]="user.username" name="Last Name"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="floating" style="color: #2A1770;">
+                    <ion-icon name="person" item-start class="text-warning"></ion-icon>
+                    National ID
+                </ion-label>
+                <ion-input type="number" [(ngModel)]="user.username" name="Phone Number"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="floating" style="color: #2A1770;">
+                    <ion-icon name="person" item-start class="text-warning"></ion-icon>
+                    Phone number
+                </ion-label>
+                <ion-input type="number" [(ngModel)]="user.username" name="Phone Number"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="floating" style="color: #2A1770;">
+                    <ion-icon name="person" item-start class="text-warning"></ion-icon>
+                    DOB
+                </ion-label>
+                <ion-input type="date" [(ngModel)]="user.username" name="DOB"></ion-input>
+            </ion-item>
+
+            <h3 style="text-align: center;color: #2A1770;">Residential Address</h3><br>
+            <hr>
+            <ion-item>
+                <ion-label position="floating" style="color: #2A1770;">
+                    <ion-icon name="person" item-start class="text-warning"></ion-icon>
+                    City
+                </ion-label>
+                <ion-input type="text" [(ngModel)]="user.username" name="username"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="floating" style="color: #2A1770;">
+                    <ion-icon name="person" item-start class="text-warning"></ion-icon>
+                    Location
+                </ion-label>
+                <ion-input type="text" [(ngModel)]="user.username" name="First Name"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="floating" style="color: #2A1770;">
+                    <ion-icon name="person" item-start class="text-warning"></ion-icon>
+                    House No & Street
+                </ion-label>
+                <ion-input type="text" [(ngModel)]="user.username" name="Last Name"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="floating" style="color:#2A1770;">
+                    <ion-icon name="lock" item-start class="text-warning"></ion-icon>
+                    Password
+                </ion-label>
+                <ion-input type="password" [(ngModel)]="user.password" name="Password"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="floating" style="color:#2A1770;">
+                    <ion-icon name="lock" item-start class="text-warning"></ion-icon>
+                    Confirm Password
+                </ion-label>
+                <ion-input type="password" [(ngModel)]="user.password" name="Confirm Password"></ion-input>
+            </ion-item>
+
+        </form>
+        <!-- <p text-right>
+            <ion-text text-right color="primary" tappable end>
+                <strong>Forgot Password?</strong>
+            </ion-text>
+        </p> -->
+
+        <p>By registering you agree to nimblemarket's <a>privacy policy</a> and <a>terms & conditions</a></p>
+
+        <div margin-top>
+            <ion-button class="shary" shape="round" icon-start expand="block" color="warning" tappable [routerLink]="['/login']">
+                <ion-icon name="log-in"></ion-icon>
+                Register
+            </ion-button>
+        </div><br>
+        <!-- <div text-center margin-top>
+            <span tappable [routerLink]="['/login']">
+        <ion-text color="primary">Have an account? <strong style="color: #E78923">Login here</strong></ion-text>
+      </span>
+        </div> -->
+
+    </div>
+</ion-content>
